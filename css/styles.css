@@ -585,17 +585,18 @@ button {
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
     
-}
-
-.all-footer{
-    display: flex;
-        align-items: baseline;
-        gap: 80px;
-}
+    }
 
 .footer-info {}
+
+.footer-socials {
+    margin-left: 120px;
+}
+
+.footer-subscribe {
+    margin-left: auto;
+}
 
 .footer-input{
     border: 1px solid #fff;
@@ -686,7 +687,7 @@ button {
     transition-property: opacity, visibility;
 }
 
-.is-open{
+.backdrop.is-open{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -717,9 +718,7 @@ button {
     height: 24px;
     fill: #2e2f42;
     stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
-    stroke-opacity: 0.1;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 24px;
     right: 24px;
@@ -761,9 +760,7 @@ button {
         outline: transparent;
         border-color: #4d5ae5;
          
-        
-        
-    }
+        }
       
       
 
@@ -825,15 +822,14 @@ button {
             color: #8e8f99;
             display: flex;
             align-items: center;
-
-            .a{
-                line-height: 1.33;
-                    text-decoration: underline;
-                    text-decoration-skip-ink: none;
-                    color: #4d5ae5;
-            }
-            margin-bottom: 24px;
+            
     }
+    
+    .modal-link {
+        line-height: 1.33;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;}
 
     .check-mark{
         border-radius: 2px;
@@ -875,7 +871,7 @@ button {
                     background: #4d5ae5;
                     border: none;
                     display: block;
-                    margin: 0 auto;
+                    margin: 24px auto;
                     white-space: nowrap;
                         transition-property: background-color;
                         transition-duration: 250ms;
