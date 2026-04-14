@@ -774,7 +774,7 @@ button {
 
         
 
-    .modal-field {
+    .modal-field:not(:last-child) {
         margin-bottom: 8px;
     }
     
@@ -811,7 +811,8 @@ button {
         padding: 8px 16px;
     }
 
-    .modal-checkbox{
+    .modal-field-checkbox{
+        margin-bottom: 16px;
        
     }
 
