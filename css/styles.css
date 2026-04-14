@@ -610,6 +610,14 @@ button {
             line-height: 2;
             letter-spacing: 0.04em;
             color: #fff;
+        transition-property: border-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:hover, .footer-input:focus {
+    outline: transparent;
+    border-color: #31d0aa;
 }
 
 .footer-form{
@@ -644,7 +652,7 @@ button {
 
 .footer-button:hover,
 .footer-button:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
     ;
 
 }
@@ -715,7 +723,7 @@ button {
     position: absolute;
     top: 24px;
     right: 24px;
-    transition-property: background-color;
+    transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -723,7 +731,7 @@ button {
 .modal-close-button:hover,
 .modal-close-button:focus {
     background-color: #404bbf;
-    ;
+    fill:#fff;
 
 }
 
@@ -749,14 +757,25 @@ button {
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
              
-    .modal-input:hover, .modal-input:focus {
+    .modal-input:hover , .modal-input:focus  {
         outline: transparent;
         border-color: #4d5ae5;
-        +.modal-icon {
-        fill: #4d5ae5;
-        }
+         
+        
         
     }
+      
+      
+
+        .modal-input:hover+.modal-icon {
+            fill: #4d5ae5;
+        }
+
+         .modal-input:focus+.modal-icon {
+            fill: #4d5ae5;
+        }
+
+        
 
     .modal-field {
         margin-bottom: 8px;
